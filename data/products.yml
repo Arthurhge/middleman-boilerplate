@@ -1,4 +1,31 @@
-- name: Some product
-  image: some_product.png
-- name: Other product
-  image: other_product.png
+- image: sexy.svg
+  title: Choisis ton enseignante
+  description: "Nos enseignantes viennent du monde entier, et t'apprendront le yoga de leur pays"
+
+- image: position.svg
+  title: Know your basics
+  description: "Le yoga c'est tout plein de positions pour rendre ta vie facile et très joyeuse."
+
+- image: lungs.svg
+  title: Apprends à respirer
+  description: "Last but not least, le yoga est une discipline fondamentale pour apprendre à respirer et donc irriguer ton cerveau."
+
+- image: flexible.svg
+  title: Gagne en sexibilité
+  description: "L'expérience nous prouve qu'avec le yoga, vous gagnerez en flexibilité, et donc en attractivité sexuelle."
+
+- image: flexible.svg
+  title: Gagne en sexibilité
+  description: "L'expérience nous prouve qu'avec le yoga, vous gagnerez en flexibilité, et donc en attractivité sexuelle."
+
+- image: flexible.svg
+  title: Gagne en sexibilité
+  description: "L'expérience nous prouve qu'avec le yoga, vous gagnerez en flexibilité, et donc en attractivité sexuelle."
+
+- image: flexible.svg
+  title: Gagne en sexibilité
+  description: "L'expérience nous prouve qu'avec le yoga, vous gagnerez en flexibilité, et donc en attractivité sexuelle."
+
+- image: flexible.svg
+  title: Gagne en sexibilité
+  description: "L'expérience nous prouve qu'avec le yoga, vous gagnerez en flexibilité, et donc en attractivité sexuelle."

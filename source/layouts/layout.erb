@@ -34,11 +34,6 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <% link_to "/pricing.html" do %>
-                <i class="fa fa-dollar"></i> Pricing
-              <% end %>
-            </li>
-            <li>
               <% link_to "/contact.html" do %>
                 <i class="fa fa-envelope-o"></i> Contact
               <% end %>
@@ -57,5 +52,16 @@
     </nav>
 
     <%= yield %>
+
+    <!-- Footer -->
+    <div id="footer">
+      <ul class="list-inline">
+        <li><a href="#" class="social"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" class="social"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#" class="social"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#" class="social"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+      <p>sexyyogist is a fictive website from LeWagon</p>
+    </div>
   </body>
 </html>

@@ -2,9 +2,84 @@
 title: Welcome to Middleman
 ---
 
-<div class="welcome text-center">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+  <!-- Banner -->
+  <div id="banner">
+    <h1>Arthur Hagiage</h1>
+    <br>
+    <p>photographe</p>
+    <a class="arrow-wrap" href="#content">
+    <span class="arrow"></span>
+    <!--<span class="hint">scroll</span>-->
+    </a>
+    <br>
+  </div>
+
+  <!-- Features -->
+
+  <div class="bg-gray" id="content">
+
+    <div class="container">
+
+      <div class="row">
+
+        <% data.products.each do |element| %>
+
+          <div class="col-sx-12 col-sm-6 col-md-3">
+            <div class="card ">
+
+              <%= image_tag element.image, class: "img-icon" %>
+              <h1><%= element.title %></h1>
+              <p><%= element.description %></p>
+
+            </div>
+
+          </div>
+
+        <% end%>
+
+      </div>
+    </div>
+  </div>
+
+  <!--formulaire-->
+  <div class="bg-black">
+    <div class="form-container">
+      <h1>Get news from sexyyogist!</h1>
+      <p>we will send you tons of sexy yoya positions</p>
+      <form class="form-inline">
+        <input type="email" placeholder='claire@yogist.com' class="form-control">
+        <input type="summit" value="Subscribe" class="btn btn-primary">
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Map -->
+
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+  var myOptions = {
+    zoom: 16,
+    center: myLatlng,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title: "You are here!"
+  });
+  </script>
+
+
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

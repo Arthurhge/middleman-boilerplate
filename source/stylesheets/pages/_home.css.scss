@@ -1,0 +1,21 @@
+// 01 - banner
+#banner {
+  background-position: center;
+  background-image: image-url('lake-house.jpeg');
+  color: $white;
+  padding: 150px 0;
+  background-size: cover;
+  height: 650px;
+  padding-left: 30px;
+
+  h1 {
+    font-size: $big-size;
+    color: $white;
+  }
+
+  p {
+  font-size: $middle-size;
+  font-weight: 100;
+  }
+}
+
